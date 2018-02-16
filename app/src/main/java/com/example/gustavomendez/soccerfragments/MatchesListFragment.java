@@ -55,7 +55,7 @@ public class MatchesListFragment extends ListFragment {
                 getActivity(), R.layout.soccer_matches_layout,
                 new ArrayList<Match>());
         mQueue= VolleySingleton.getInstance(getContext()).getRequestQueue();
-        for(int i=0; i<10;i++) {
+        for(int i=1; i<10;i++) {
             jsonMarvel(getStarWarsString(i), adapter);
         }
 
